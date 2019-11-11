@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM,{ unmountComponentAtNode }  from 'react-dom';
 import './index.css';
-import Confirm from './confirm.js';
+import confirm from './confirm.jsx';
 import * as serviceWorker from './serviceWorker';
 
 // 请写一个满足以下要求的confirm方法组件（可以参考一下 ， antd 的 Modal 组件的 Modal.info, Modal.waring . 这样的用法 ）：
@@ -21,24 +21,24 @@ import * as serviceWorker from './serviceWorker';
 //     }
 // }
 
-function confirm(props){
-    return (
-        <div>
-            <Confirm
-                width={'520px'}
-                height={'520px'}
-                visible={props.visible}
-                title={props.title}
-                content={props.content}
-                opacit={0.66}
-                onOk={props.onOk}
-                onCancel={props.onCancel}
-            />
-
-        </div>
-    )
-
-}
+// function confirm(props){
+//     return (
+//         <div>
+//             <Confirm
+//                 width={props.width}
+//                 height={props.height}
+//                 visible={props.visible}
+//                 title={props.title}
+//                 content={props.content}
+//                 opacit={props.opacit}
+//                 onOk={props.onOk}
+//                 onCancel={props.onCancel}
+//             />
+//
+//         </div>
+//     )
+//
+// }
 
 
 class App extends React.Component{
